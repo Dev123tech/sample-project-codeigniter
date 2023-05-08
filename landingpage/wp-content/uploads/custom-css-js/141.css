@@ -1,0 +1,85 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+/* CUSTOM CSS */
+
+#top_img_home .elementor-image:before {
+    left: 30px;
+    bottom: 10px;
+    content: '';
+    width: 85%;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    filter: blur(15px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    -moz-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    -ms-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    -o-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    left: 30px;
+    bottom: 10px;
+    content: '';
+    width: 85%;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    filter: blur(15px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    -moz-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    -ms-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    -o-transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+    transform: perspective(1000px) rotateY(9deg) rotateZ(5deg);
+}
+body.page-id-137{
+  background-image: linear-gradient(to right, #050e3e , #1944b3,#050e3e );
+}
+.gloden_text{
+  background: -webkit-linear-gradient(#61480a, #efb526);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.elementor-field-option label{
+  padding-left:5px;
+  font-size:16px;
+}
+.elementor-field-subgroup{
+margin-top:-18px;
+}
+.elementor-element.elementor-element-511f929 .elementor-button{
+  background: linear-gradient(to right, #FFCD00,#B8860B) !important;
+}
+.elementor-element.elementor-element-66b7b59 .elementor-button{
+  background: linear-gradient(to right, #FFCD00,#B8860B) !important;
+}
+h2, h3, h6{
+   color: #b8860b;
+    background: -webkit-linear-gradient(#61480a, #efb526);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form#cus_vendor_popup_form .elementor-message-success,
+form#cus_customer_popup_form .elementor-message-success{
+  display:none;
+}</style>
+<!-- end Simple Custom CSS and JS -->

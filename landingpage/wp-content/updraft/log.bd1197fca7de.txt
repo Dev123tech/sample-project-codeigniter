@@ -1,0 +1,489 @@
+0000.000 (0) Opened log file at time: Wed, 16 Sep 2020 08:45:28 +0000 on https://omgee.com.au/landingpage
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.26 WP: 5.5.1 PHP: 7.4.9 (cgi-fcgi, Linux ip-172-26-10-81.ap-southeast-2.compute.internal 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64) MySQL: 10.1.46-MariaDB WPLANG: en_US Server: Apache/2.4.39 (Unix) OpenSSL/1.0.2k-fips safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 59.7M | 61M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 56213.1 MB
+0000.005 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.009 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.020 (0) Set semaphore last lock (fd) time to 2020-09-16 08:45:28
+0000.021 (0) Semaphore lock (fd) complete
+0000.028 (0) Backup run: resumption=0, nonce=bd1197fca7de, file_nonce=bd1197fca7de begun at=1600245928 (0s ago), job type=backup
+0000.031 (0) Scheduling a resumption (1) after 300 seconds (1600246228) in case this run gets aborted
+0000.043 (0) Checking if we have a zip executable available
+0000.045 (0) Testing: /usr/bin/zip
+0000.052 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.054 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.055 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.056 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.058 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.063 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.065 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.072 (0) Working binary zip found: /usr/bin/zip
+0000.075 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.077 (0) Creation of backups of directories: beginning
+0000.083 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.283 (0) Total entities for the zip file: 1615 directories, 10610 files (0 skipped as non-modified), 133.8 MB
+0000.293 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.299 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.306 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.312 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.317 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.319 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (14.8 MB, 10610 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0001.710 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: size is now: 5.30 MB
+0001.719 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 600 files added (on-disk size: 5388.5 KB)
+0001.726 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 700 files added (on-disk size: 5388.5 KB)
+0001.732 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 800 files added (on-disk size: 5388.5 KB)
+0001.738 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 900 files added (on-disk size: 5388.5 KB)
+0001.744 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1000 files added (on-disk size: 5388.5 KB)
+0001.746 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.9 MB, 10610 files batched, 501 (1002) added so far); re-opening (prior size: 5388.5 KB)
+0002.084 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: size is now: 6.70 MB
+0002.094 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1100 files added (on-disk size: 6884.7 KB)
+0002.101 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1200 files added (on-disk size: 6884.7 KB)
+0002.107 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1300 files added (on-disk size: 6884.7 KB)
+0002.114 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1400 files added (on-disk size: 6884.7 KB)
+0002.120 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1500 files added (on-disk size: 6884.7 KB)
+0002.122 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (16.3 MB, 10610 files batched, 501 (1503) added so far); re-opening (prior size: 6884.7 KB)
+0002.962 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: size is now: 11.30 MB
+0002.972 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1600 files added (on-disk size: 11621 KB)
+0002.979 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1700 files added (on-disk size: 11621 KB)
+0002.986 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1800 files added (on-disk size: 11621 KB)
+0002.992 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 1900 files added (on-disk size: 11621 KB)
+0002.999 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2000 files added (on-disk size: 11621 KB)
+0003.000 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.8 MB, 10610 files batched, 501 (2004) added so far); re-opening (prior size: 11621 KB)
+0003.418 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2100 files added (on-disk size: 12336.7 KB)
+0003.425 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2200 files added (on-disk size: 12336.7 KB)
+0003.463 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2300 files added (on-disk size: 12336.7 KB)
+0003.469 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2400 files added (on-disk size: 12336.7 KB)
+0003.476 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2500 files added (on-disk size: 12336.7 KB)
+0003.477 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.7 MB, 10610 files batched, 501 (2505) added so far); re-opening (prior size: 12336.7 KB)
+0003.931 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2600 files added (on-disk size: 13110.7 KB)
+0003.937 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2700 files added (on-disk size: 13110.7 KB)
+0003.944 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2800 files added (on-disk size: 13110.7 KB)
+0003.950 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 2900 files added (on-disk size: 13110.7 KB)
+0003.957 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3000 files added (on-disk size: 13110.7 KB)
+0003.959 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (0.5 MB, 10610 files batched, 501 (3006) added so far); re-opening (prior size: 13110.7 KB)
+0004.279 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3100 files added (on-disk size: 13469 KB)
+0004.286 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3200 files added (on-disk size: 13469 KB)
+0004.292 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3300 files added (on-disk size: 13469 KB)
+0004.299 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3400 files added (on-disk size: 13469 KB)
+0004.305 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3500 files added (on-disk size: 13469 KB)
+0004.308 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (10.9 MB, 10610 files batched, 501 (3507) added so far); re-opening (prior size: 13469 KB)
+0004.840 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: size is now: 21.50 MB
+0004.851 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3600 files added (on-disk size: 22035.3 KB)
+0004.857 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3700 files added (on-disk size: 22035.3 KB)
+0004.864 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3800 files added (on-disk size: 22035.3 KB)
+0004.870 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 3900 files added (on-disk size: 22035.3 KB)
+0004.876 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4000 files added (on-disk size: 22035.3 KB)
+0004.879 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.2 MB, 10610 files batched, 501 (4008) added so far); re-opening (prior size: 22035.3 KB)
+0005.884 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4100 files added (on-disk size: 22808.4 KB)
+0005.891 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4200 files added (on-disk size: 22808.4 KB)
+0005.897 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4300 files added (on-disk size: 22808.4 KB)
+0005.903 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4400 files added (on-disk size: 22808.4 KB)
+0005.909 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4500 files added (on-disk size: 22808.4 KB)
+0005.912 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.7 MB, 10610 files batched, 501 (4509) added so far); re-opening (prior size: 22808.4 KB)
+0006.505 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4600 files added (on-disk size: 26656 KB)
+0006.512 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4700 files added (on-disk size: 26656 KB)
+0006.518 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4800 files added (on-disk size: 26656 KB)
+0006.524 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 4900 files added (on-disk size: 26656 KB)
+0006.526 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.1 MB, 10610 files batched, 405 (4914) added so far); re-opening (prior size: 26656 KB)
+0007.758 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: size is now: 38.20 MB
+0007.763 (0) A useful amount of data was added after this amount of zip processing: 1.6 s (normalised: 1.6 s, rate: 16186 KB/s)
+0007.766 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.5864028930664, normalised_time=1.5816161247214, max_time=7.764261007309, data points known=1, old_max_bytes=26214400, new_max_bytes=99446634)
+0007.774 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5000 files added (on-disk size: 39101.8 KB)
+0007.781 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5100 files added (on-disk size: 39101.8 KB)
+0007.788 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5200 files added (on-disk size: 39101.8 KB)
+0007.795 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5300 files added (on-disk size: 39101.8 KB)
+0007.801 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5400 files added (on-disk size: 39101.8 KB)
+0007.804 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.2 MB, 10610 files batched, 501 (5415) added so far); re-opening (prior size: 39101.8 KB)
+0008.328 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5500 files added (on-disk size: 40480.6 KB)
+0008.334 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5600 files added (on-disk size: 40480.6 KB)
+0008.341 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5700 files added (on-disk size: 40480.6 KB)
+0008.347 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5800 files added (on-disk size: 40480.6 KB)
+0008.353 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 5900 files added (on-disk size: 40480.6 KB)
+0008.357 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.6 MB, 10610 files batched, 501 (5916) added so far); re-opening (prior size: 40480.6 KB)
+0008.945 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6000 files added (on-disk size: 42346.2 KB)
+0008.951 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6100 files added (on-disk size: 42346.2 KB)
+0008.957 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6200 files added (on-disk size: 42346.2 KB)
+0008.964 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6300 files added (on-disk size: 42346.2 KB)
+0008.970 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6400 files added (on-disk size: 42346.2 KB)
+0008.972 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.5 MB, 10610 files batched, 501 (6417) added so far); re-opening (prior size: 42346.2 KB)
+0009.927 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6500 files added (on-disk size: 43844.4 KB)
+0009.934 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6600 files added (on-disk size: 43844.4 KB)
+0009.940 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6700 files added (on-disk size: 43844.4 KB)
+0009.946 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6800 files added (on-disk size: 43844.4 KB)
+0009.952 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 6900 files added (on-disk size: 43844.4 KB)
+0009.955 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.7 MB, 10610 files batched, 501 (6918) added so far); re-opening (prior size: 43844.4 KB)
+0010.458 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7000 files added (on-disk size: 44720.8 KB)
+0010.465 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7100 files added (on-disk size: 44720.8 KB)
+0010.471 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7200 files added (on-disk size: 44720.8 KB)
+0010.477 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7300 files added (on-disk size: 44720.8 KB)
+0010.483 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7400 files added (on-disk size: 44720.8 KB)
+0010.486 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.2 MB, 10610 files batched, 501 (7419) added so far); re-opening (prior size: 44720.8 KB)
+0011.159 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7500 files added (on-disk size: 47241.3 KB)
+0011.166 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7600 files added (on-disk size: 47241.3 KB)
+0011.172 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7700 files added (on-disk size: 47241.3 KB)
+0011.178 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7800 files added (on-disk size: 47241.3 KB)
+0011.185 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 7900 files added (on-disk size: 47241.3 KB)
+0011.188 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.1 MB, 10610 files batched, 501 (7920) added so far); re-opening (prior size: 47241.3 KB)
+0011.597 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8000 files added (on-disk size: 47917.4 KB)
+0011.603 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8100 files added (on-disk size: 47917.4 KB)
+0011.609 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8200 files added (on-disk size: 47917.4 KB)
+0011.615 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8300 files added (on-disk size: 47917.4 KB)
+0011.621 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8400 files added (on-disk size: 47917.4 KB)
+0011.624 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.4 MB, 10610 files batched, 501 (8421) added so far); re-opening (prior size: 47917.4 KB)
+0012.899 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8500 files added (on-disk size: 49131 KB)
+0012.905 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8600 files added (on-disk size: 49131 KB)
+0012.912 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8700 files added (on-disk size: 49131 KB)
+0012.918 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8800 files added (on-disk size: 49131 KB)
+0012.924 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 8900 files added (on-disk size: 49131 KB)
+0012.926 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.8 MB, 10610 files batched, 501 (8922) added so far); re-opening (prior size: 49131 KB)
+0013.749 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9000 files added (on-disk size: 52139.4 KB)
+0013.755 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9100 files added (on-disk size: 52139.4 KB)
+0013.762 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9200 files added (on-disk size: 52139.4 KB)
+0013.768 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9300 files added (on-disk size: 52139.4 KB)
+0013.775 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9400 files added (on-disk size: 52139.4 KB)
+0013.778 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.1 MB, 10610 files batched, 501 (9423) added so far); re-opening (prior size: 52139.4 KB)
+0014.378 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9500 files added (on-disk size: 53576.4 KB)
+0014.385 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9600 files added (on-disk size: 53576.4 KB)
+0014.391 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9700 files added (on-disk size: 53576.4 KB)
+0014.397 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9800 files added (on-disk size: 53576.4 KB)
+0014.405 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 9900 files added (on-disk size: 53576.4 KB)
+0014.408 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.1 MB, 10610 files batched, 501 (9924) added so far); re-opening (prior size: 53576.4 KB)
+0014.923 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 10000 files added (on-disk size: 54286.2 KB)
+0014.929 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 10100 files added (on-disk size: 54286.2 KB)
+0014.936 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 10200 files added (on-disk size: 54286.2 KB)
+0014.942 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 10300 files added (on-disk size: 54286.2 KB)
+0014.948 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 10400 files added (on-disk size: 54286.2 KB)
+0014.950 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.1 MB, 10610 files batched, 501 (10425) added so far); re-opening (prior size: 54286.2 KB)
+0015.717 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 10500 files added (on-disk size: 55198.3 KB)
+0015.724 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip.tmp: 10600 files added (on-disk size: 55198.3 KB)
+0017.283 (0) Created plugins zip (0) - 56194.4 KB in 17.2 s (3267.3 KB/s) (sha1: 04b929731b1d6925d7a93f52fc2689d485457d74, sha256: 83342aef9d8f4ef441565f27eb02672086558e302aae1a62f9381bd1ffee7d49)
+0017.287 (0) Beginning creation of dump of themes (split every: 400 MB)
+0017.306 (0) Total entities for the zip file: 183 directories, 956 files (0 skipped as non-modified), 18.4 MB
+0017.312 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0017.318 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0017.324 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0017.330 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0017.336 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0017.338 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (12.7 MB, 956 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0017.978 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: size is now: 3.80 MB
+0017.986 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 600 files added (on-disk size: 3905.2 KB)
+0017.993 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 700 files added (on-disk size: 3905.2 KB)
+0017.999 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 800 files added (on-disk size: 3905.2 KB)
+0018.005 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: 900 files added (on-disk size: 3905.2 KB)
+0018.423 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip.tmp: size is now: 5.80 MB
+0018.499 (0) Created themes zip (0) - 5902.3 KB in 1.2 s (4876.2 KB/s) (sha1: 5920ccdea8cd8cd228898063f57fd9f2d3fbc64e, sha256: 0725ff9a0236b87c859ca191190e6f95ff723e6f5c56b12daf9004d2465040a4)
+0018.504 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0018.505 (0) Looking for candidates to backup in: /home/omgeeco/public_html/landingpage/wp-content/uploads
+0018.507 (0) finding files: 2020: adding to list (1)
+0018.508 (0) finding files: custom-css-js: adding to list (2)
+0018.510 (0) finding files: elementor: adding to list (3)
+0018.511 (0) finding files: essential-addons-elementor: adding to list (4)
+0018.513 (0) finding files: wp-file-manager-pro: adding to list (5)
+0018.515 (0) finding files: mc4wp-debug-log.php: adding to list (6)
+0018.516 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0018.522 (0) Total entities for the zip file: 10 directories, 158 files (0 skipped as non-modified), 18.5 MB
+0018.528 (0) Zip: backup_2020-09-16-0845_OMGee_bd1197fca7de-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0018.892 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-uploads.zip.tmp: size is now: 12.60 MB
+0019.049 (0) Created uploads zip (0) - 12876.5 KB in 0.5 s (24256 KB/s) (sha1: 9d70dc29884fc36ddb159c831c755314fd1f18fc, sha256: a27efc3b5d4e71b97ae15d25404b8db6ad7705df3b32c01a779f1c04bed84a2e)
+0019.053 (0) Beginning backup of other directories found in the content directory (index: 0)
+0019.054 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0019.056 (0) Looking for candidates to backup in: /home/omgeeco/public_html/landingpage/wp-content
+0019.057 (0) finding files: index.php: adding to list (1)
+0019.059 (0) finding files: mu-plugins: adding to list (2)
+0019.061 (0) finding files: plugins: skipping: this is the plugins directory
+0019.062 (0) finding files: themes: skipping: this is the themes directory
+0019.063 (0) finding files: upgrade: skipping: excluded by options
+0019.065 (0) finding files: uploads: skipping: this is the uploads directory
+0019.067 (0) finding files: updraft: skipping: this is the updraft directory
+0019.071 (0) Total entities for the zip file: 1 directories, 3 files (0 skipped as non-modified), 0 MB
+0019.077 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-others.zip.tmp: size is now: 0.00 MB
+0019.085 (0) Created others zip (0) - 2.6 KB in 0 s (154.8 KB/s) (sha1: c8a4f755a4adc6a51a6b6fd89cbc846f1867bb99, sha256: f7c465c637e82deb62c57aea81433828e8e25ed466a4016a370a88fc5ff7d1fb)
+0019.104 (0) Saving backup status to database (elements: 8)
+0019.109 (0) Beginning creation of database dump (WordPress DB)
+0019.112 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0019.131 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `omg_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCR (truncated - 1222 bytes total)
+0019.135 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0019.142 (0) Table omg_options: Total expected rows (approximate): 414
+0019.177 (0) Table omg_options: Rows added in this batch (start page: 0; next: finished): 419 in 0.03 seconds
+0019.179 (0) Table omg_options: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_options.table.gz - 131.9 KB)
+0019.186 (0) Table omg_users: Total expected rows (approximate): 4
+0019.189 (0) Table omg_users: Rows added in this batch (start page: 0; next: finished): 4 in 0.00 seconds
+0019.190 (0) Table omg_users: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_users.table.gz - 0.8 KB)
+0019.196 (0) Table omg_usermeta: Total expected rows (approximate): 118
+0019.199 (0) Table omg_usermeta: Rows added in this batch (start page: 0; next: finished): 118 in 0.00 seconds
+0019.201 (0) Table omg_usermeta: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_usermeta.table.gz - 4.7 KB)
+0019.207 (0) Table omg_actionscheduler_actions: Total expected rows (approximate): 28
+0019.210 (0) Table omg_actionscheduler_actions: Rows added in this batch (start page: 0; next: finished): 28 in 0.00 seconds
+0019.211 (0) Table omg_actionscheduler_actions: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_actions.table.gz - 1.3 KB)
+0019.218 (0) Table omg_actionscheduler_claims: Total expected rows (approximate): 0
+0019.220 (0) Table omg_actionscheduler_claims: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.222 (0) Table omg_actionscheduler_claims: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_claims.table.gz - 0.3 KB)
+0019.229 (0) Table omg_actionscheduler_groups: Total expected rows (approximate): 2
+0019.231 (0) Table omg_actionscheduler_groups: Rows added in this batch (start page: 0; next: finished): 2 in 0.00 seconds
+0019.233 (0) Table omg_actionscheduler_groups: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_groups.table.gz - 0.4 KB)
+0019.242 (0) Table omg_actionscheduler_logs: Total expected rows (approximate): 84
+0019.245 (0) Table omg_actionscheduler_logs: Rows added in this batch (start page: 0; next: finished): 84 in 0.00 seconds
+0019.247 (0) Table omg_actionscheduler_logs: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_logs.table.gz - 1.4 KB)
+0019.253 (0) Table omg_commentmeta: Total expected rows (approximate): 0
+0019.256 (0) Table omg_commentmeta: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.257 (0) Table omg_commentmeta: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_commentmeta.table.gz - 0.4 KB)
+0019.264 (0) Table omg_comments: Total expected rows (approximate): 0
+0019.268 (0) Table omg_comments: Rows added in this batch (start page: 0; next: finished): 1 in 0.00 seconds
+0019.269 (0) Table omg_comments: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_comments.table.gz - 0.7 KB)
+0019.280 (0) Table omg_links: Total expected rows (approximate): 0
+0019.282 (0) Table omg_links: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.283 (0) Table omg_links: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_links.table.gz - 0.4 KB)
+0019.294 (0) Table omg_postmeta: Total expected rows (approximate): 3410
+0019.639 (0) Table omg_postmeta: Rows added in this batch (start page: 0; next: finished): 3145 in 0.34 seconds
+0019.641 (0) Table omg_postmeta: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_postmeta.table.gz - 1404.6 KB)
+0019.649 (0) Table omg_posts: Total expected rows (approximate): 348
+0019.682 (0) Table omg_posts: Rows added in this batch (start page: 0; next: finished): 540 in 0.03 seconds
+0019.684 (0) Table omg_posts: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_posts.table.gz - 47.9 KB)
+0019.692 (0) Table omg_term_relationships: Total expected rows (approximate): 35
+0019.695 (0) Table omg_term_relationships: Rows added in this batch (start page: 0; next: finished): 35 in 0.00 seconds
+0019.697 (0) Table omg_term_relationships: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_term_relationships.table.gz - 0.5 KB)
+0019.703 (0) Table omg_term_taxonomy: Total expected rows (approximate): 4
+0019.705 (0) Table omg_term_taxonomy: Rows added in this batch (start page: 0; next: finished): 4 in 0.00 seconds
+0019.707 (0) Table omg_term_taxonomy: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_term_taxonomy.table.gz - 0.5 KB)
+0019.713 (0) Table omg_termmeta: Total expected rows (approximate): 0
+0019.716 (0) Table omg_termmeta: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.717 (0) Table omg_termmeta: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_termmeta.table.gz - 0.4 KB)
+0019.723 (0) Table omg_terms: Total expected rows (approximate): 4
+0019.725 (0) Table omg_terms: Rows added in this batch (start page: 0; next: finished): 4 in 0.00 seconds
+0019.727 (0) Table omg_terms: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_terms.table.gz - 0.4 KB)
+0019.733 (0) Table omg_WP_SEO_404_links: Total expected rows (approximate): 2
+0019.736 (0) Table omg_WP_SEO_404_links: Rows added in this batch (start page: 0; next: finished): 2 in 0.00 seconds
+0019.738 (0) Table omg_WP_SEO_404_links: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_404_links.table.gz - 0.6 KB)
+0019.744 (0) Table omg_WP_SEO_Cache: Total expected rows (approximate): 2
+0019.747 (0) Table omg_WP_SEO_Cache: Rows added in this batch (start page: 0; next: finished): 2 in 0.00 seconds
+0019.748 (0) Table omg_WP_SEO_Cache: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_Cache.table.gz - 0.4 KB)
+0019.755 (0) Table omg_WP_SEO_Redirection: Total expected rows (approximate): 1
+0019.757 (0) Table omg_WP_SEO_Redirection: Rows added in this batch (start page: 0; next: finished): 1 in 0.00 seconds
+0019.759 (0) Table omg_WP_SEO_Redirection: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_Redirection.table.gz - 0.5 KB)
+0019.764 (0) Table omg_WP_SEO_Redirection_LOG: Total expected rows (approximate): 0
+0019.767 (0) Table omg_WP_SEO_Redirection_LOG: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.768 (0) Table omg_WP_SEO_Redirection_LOG: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_Redirection_LOG.table.gz - 0.4 KB)
+0019.774 (0) Table omg_fv_enteries: Total expected rows (approximate): 165
+0019.778 (0) Table omg_fv_enteries: Rows added in this batch (start page: 0; next: finished): 165 in 0.00 seconds
+0019.780 (0) Table omg_fv_enteries: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_fv_enteries.table.gz - 2.6 KB)
+0019.786 (0) Table omg_fv_entry_meta: Total expected rows (approximate): 5500
+0019.822 (0) Table omg_fv_entry_meta: Rows added in this batch (start page: 0; next: finished): 5500 in 0.03 seconds
+0019.824 (0) Table omg_fv_entry_meta: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_fv_entry_meta.table.gz - 33.4 KB)
+0019.830 (0) Table omg_fv_logs: Total expected rows (approximate): 0
+0019.832 (0) Table omg_fv_logs: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.834 (0) Table omg_fv_logs: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_fv_logs.table.gz - 0.3 KB)
+0019.840 (0) Table omg_hfcm_scripts: Total expected rows (approximate): 0
+0019.842 (0) Table omg_hfcm_scripts: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.844 (0) Table omg_hfcm_scripts: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_hfcm_scripts.table.gz - 0.5 KB)
+0019.850 (0) Table omg_wpfm_backup: Total expected rows (approximate): 0
+0019.852 (0) Table omg_wpfm_backup: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.854 (0) Table omg_wpfm_backup: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_wpfm_backup.table.gz - 0.3 KB)
+0019.862 (0) Table omg_wpmailsmtp_tasks_meta: Total expected rows (approximate): 20
+0019.865 (0) Table omg_wpmailsmtp_tasks_meta: Rows added in this batch (start page: 0; next: finished): 20 in 0.00 seconds
+0019.866 (0) Table omg_wpmailsmtp_tasks_meta: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_wpmailsmtp_tasks_meta.table.gz - 0.6 KB)
+0019.874 (0) Table omg_yoast_indexable: Total expected rows (approximate): 46
+0019.879 (0) Table omg_yoast_indexable: Rows added in this batch (start page: 0; next: finished): 46 in 0.00 seconds
+0019.880 (0) Table omg_yoast_indexable: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_indexable.table.gz - 5.3 KB)
+0019.886 (0) Table omg_yoast_indexable_hierarchy: Total expected rows (approximate): 4
+0019.889 (0) Table omg_yoast_indexable_hierarchy: Rows added in this batch (start page: 0; next: finished): 4 in 0.00 seconds
+0019.890 (0) Table omg_yoast_indexable_hierarchy: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_indexable_hierarchy.table.gz - 0.4 KB)
+0019.897 (0) Table omg_yoast_migrations: Total expected rows (approximate): 18
+0019.899 (0) Table omg_yoast_migrations: Rows added in this batch (start page: 0; next: finished): 18 in 0.00 seconds
+0019.901 (0) Table omg_yoast_migrations: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_migrations.table.gz - 0.5 KB)
+0019.907 (0) Table omg_yoast_primary_term: Total expected rows (approximate): 0
+0019.910 (0) Table omg_yoast_primary_term: Rows added in this batch (start page: 0; next: finished): 0 in 0.00 seconds
+0019.911 (0) Table omg_yoast_primary_term: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_primary_term.table.gz - 0.4 KB)
+0019.917 (0) Table omg_yoast_seo_links: Total expected rows (approximate): 77
+0019.920 (0) Table omg_yoast_seo_links: Rows added in this batch (start page: 0; next: finished): 77 in 0.00 seconds
+0019.922 (0) Table omg_yoast_seo_links: finishing file (backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_seo_links.table.gz - 1.9 KB)
+0019.925 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_options.table.gz (1/31): adding to final database dump
+0019.956 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_users.table.gz (2/31): adding to final database dump
+0019.958 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_usermeta.table.gz (3/31): adding to final database dump
+0019.960 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_actions.table.gz (4/31): adding to final database dump
+0019.962 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_claims.table.gz (5/31): adding to final database dump
+0019.964 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_groups.table.gz (6/31): adding to final database dump
+0019.965 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_actionscheduler_logs.table.gz (7/31): adding to final database dump
+0019.967 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_commentmeta.table.gz (8/31): adding to final database dump
+0019.969 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_comments.table.gz (9/31): adding to final database dump
+0019.970 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_links.table.gz (10/31): adding to final database dump
+0019.971 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_postmeta.table.gz (11/31): adding to final database dump
+0020.317 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_posts.table.gz (12/31): adding to final database dump
+0020.350 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_term_relationships.table.gz (13/31): adding to final database dump
+0020.363 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_term_taxonomy.table.gz (14/31): adding to final database dump
+0020.367 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_termmeta.table.gz (15/31): adding to final database dump
+0020.390 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_terms.table.gz (16/31): adding to final database dump
+0020.412 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_404_links.table.gz (17/31): adding to final database dump
+0020.434 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_Cache.table.gz (18/31): adding to final database dump
+0020.455 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_Redirection.table.gz (19/31): adding to final database dump
+0020.466 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_WP_SEO_Redirection_LOG.table.gz (20/31): adding to final database dump
+0020.482 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_fv_enteries.table.gz (21/31): adding to final database dump
+0020.499 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_fv_entry_meta.table.gz (22/31): adding to final database dump
+0020.521 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_fv_logs.table.gz (23/31): adding to final database dump
+0020.543 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_hfcm_scripts.table.gz (24/31): adding to final database dump
+0020.560 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_wpfm_backup.table.gz (25/31): adding to final database dump
+0020.584 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_wpmailsmtp_tasks_meta.table.gz (26/31): adding to final database dump
+0020.596 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_indexable.table.gz (27/31): adding to final database dump
+0020.601 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_indexable_hierarchy.table.gz (28/31): adding to final database dump
+0020.614 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_migrations.table.gz (29/31): adding to final database dump
+0020.636 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_primary_term.table.gz (30/31): adding to final database dump
+0020.650 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db-table-omg_yoast_seo_links.table.gz (31/31): adding to final database dump
+0020.717 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db.gz: finished writing out complete database file (1632 KB)
+0020.848 (0) Total database tables backed up: 31 (backup_2020-09-16-0845_OMGee_bd1197fca7de-db.gz, size: 1677246, sha1: 033e576ba3e950b84048fe9cffc952cd8e8ffdb9, sha256: 3ef93ba1b2270b7a1daaa07e21b92e1758be7aaf964f9ade208bd2c34b21fb75)
+0020.955 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0020.969 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0020.988 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0021.010 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-others.zip: others: This file has not yet been successfully uploaded: will queue
+0021.025 (0) backup_2020-09-16-0845_OMGee_bd1197fca7de-db.gz: db: This file has not yet been successfully uploaded: will queue
+0021.033 (0) Saving backup history. Total backup size: 74.8 MB
+0021.124 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0021.212 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0021.223 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-2df10abed60712f9ee6906b196e68535)
+0024.128 (0) Google Drive: quota usage: used=141.1 MB, total=15360 MB, available=15218.9 MB
+0024.130 (0) Google Drive: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip: Attempting to upload to Google Drive (into folder id: 1Lz_FBoZquEcY5nWorS3npP8g9oTne4oH)
+0025.873 (0) Googledrive chunked upload: 1.8 % uploaded (1048576)
+0026.608 (0) Googledrive chunked upload: 3.6 % uploaded (2097152)
+0027.592 (0) Googledrive chunked upload: 5.5 % uploaded (3145728)
+0028.336 (0) Googledrive chunked upload: 7.3 % uploaded (4194304)
+0029.319 (0) Googledrive chunked upload: 9.1 % uploaded (5242880)
+0030.139 (0) Googledrive chunked upload: 10.9 % uploaded (6291456)
+0030.882 (0) Googledrive chunked upload: 12.8 % uploaded (7340032)
+0031.517 (0) Googledrive chunked upload: 14.6 % uploaded (8388608)
+0032.478 (0) Googledrive chunked upload: 16.4 % uploaded (9437184)
+0033.471 (0) Googledrive chunked upload: 18.2 % uploaded (10485760)
+0034.378 (0) Googledrive chunked upload: 20 % uploaded (11534336)
+0035.111 (0) Googledrive chunked upload: 21.9 % uploaded (12582912)
+0035.764 (0) Googledrive chunked upload: 23.7 % uploaded (13631488)
+0036.650 (0) Googledrive chunked upload: 25.5 % uploaded (14680064)
+0037.309 (0) Googledrive chunked upload: 27.3 % uploaded (15728640)
+0037.926 (0) Googledrive chunked upload: 29.2 % uploaded (16777216)
+0038.662 (0) Googledrive chunked upload: 31 % uploaded (17825792)
+0039.306 (0) Googledrive chunked upload: 32.8 % uploaded (18874368)
+0040.270 (0) Googledrive chunked upload: 34.6 % uploaded (19922944)
+0041.274 (0) Googledrive chunked upload: 36.4 % uploaded (20971520)
+0042.183 (0) Googledrive chunked upload: 38.3 % uploaded (22020096)
+0043.068 (0) Googledrive chunked upload: 40.1 % uploaded (23068672)
+0044.018 (0) Googledrive chunked upload: 41.9 % uploaded (24117248)
+0044.714 (0) Googledrive chunked upload: 43.7 % uploaded (25165824)
+0045.426 (0) Googledrive chunked upload: 45.6 % uploaded (26214400)
+0046.102 (0) Googledrive chunked upload: 47.4 % uploaded (27262976)
+0046.980 (0) Googledrive chunked upload: 49.2 % uploaded (28311552)
+0047.618 (0) Googledrive chunked upload: 51 % uploaded (29360128)
+0048.500 (0) Googledrive chunked upload: 52.8 % uploaded (30408704)
+0049.256 (0) Googledrive chunked upload: 54.7 % uploaded (31457280)
+0049.942 (0) Googledrive chunked upload: 56.5 % uploaded (32505856)
+0050.834 (0) Googledrive chunked upload: 58.3 % uploaded (33554432)
+0051.497 (0) Googledrive chunked upload: 60.1 % uploaded (34603008)
+0052.119 (0) Googledrive chunked upload: 62 % uploaded (35651584)
+0053.030 (0) Googledrive chunked upload: 63.8 % uploaded (36700160)
+0053.911 (0) Googledrive chunked upload: 65.6 % uploaded (37748736)
+0054.816 (0) Googledrive chunked upload: 67.4 % uploaded (38797312)
+0055.483 (0) Googledrive chunked upload: 69.2 % uploaded (39845888)
+0056.296 (0) Googledrive chunked upload: 71.1 % uploaded (40894464)
+0056.917 (0) Googledrive chunked upload: 72.9 % uploaded (41943040)
+0057.820 (0) Googledrive chunked upload: 74.7 % uploaded (42991616)
+0058.540 (0) Googledrive chunked upload: 76.5 % uploaded (44040192)
+0059.434 (0) Googledrive chunked upload: 78.4 % uploaded (45088768)
+0060.386 (0) Googledrive chunked upload: 80.2 % uploaded (46137344)
+0061.009 (0) Googledrive chunked upload: 82 % uploaded (47185920)
+0061.894 (0) Googledrive chunked upload: 83.8 % uploaded (48234496)
+0062.638 (0) Googledrive chunked upload: 85.6 % uploaded (49283072)
+0063.407 (0) Googledrive chunked upload: 87.5 % uploaded (50331648)
+0064.270 (0) Googledrive chunked upload: 89.3 % uploaded (51380224)
+0064.893 (0) Googledrive chunked upload: 91.1 % uploaded (52428800)
+0065.727 (0) Googledrive chunked upload: 92.9 % uploaded (53477376)
+0066.542 (0) Googledrive chunked upload: 94.8 % uploaded (54525952)
+0067.425 (0) Googledrive chunked upload: 96.6 % uploaded (55574528)
+0068.374 (0) Googledrive chunked upload: 98.4 % uploaded (56623104)
+0070.906 (0) Googledrive chunked upload: 100 % uploaded (56623104)
+0070.911 (0) Google Drive: OK: Archive backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip uploaded in 46.78 seconds
+0070.914 (0) Recording as successfully uploaded: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip
+0070.926 (0) Deleting local file: backup_2020-09-16-0845_OMGee_bd1197fca7de-plugins.zip: OK
+0071.217 (0) Google Drive: quota usage: used=196 MB, total=15360 MB, available=15164 MB
+0071.219 (0) Google Drive: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip: Attempting to upload to Google Drive (into folder id: 1Lz_FBoZquEcY5nWorS3npP8g9oTne4oH)
+0072.596 (0) Googledrive chunked upload: 17.3 % uploaded (1048576)
+0073.334 (0) Googledrive chunked upload: 34.7 % uploaded (2097152)
+0074.277 (0) Googledrive chunked upload: 52 % uploaded (3145728)
+0075.033 (0) Googledrive chunked upload: 69.4 % uploaded (4194304)
+0076.028 (0) Googledrive chunked upload: 86.7 % uploaded (5242880)
+0077.595 (0) Googledrive chunked upload: 100 % uploaded (5242880)
+0077.621 (0) Google Drive: OK: Archive backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip uploaded in 6.4 seconds
+0077.625 (0) Recording as successfully uploaded: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip
+0077.633 (0) Deleting local file: backup_2020-09-16-0845_OMGee_bd1197fca7de-themes.zip: OK
+0077.957 (0) Google Drive: quota usage: used=201.8 MB, total=15360 MB, available=15158.2 MB
+0077.959 (0) Google Drive: backup_2020-09-16-0845_OMGee_bd1197fca7de-uploads.zip: Attempting to upload to Google Drive (into folder id: 1Lz_FBoZquEcY5nWorS3npP8g9oTne4oH)
+0079.308 (0) Googledrive chunked upload: 8 % uploaded (1048576)
+0080.260 (0) Googledrive chunked upload: 15.9 % uploaded (2097152)
+0080.999 (0) Googledrive chunked upload: 23.9 % uploaded (3145728)
+0081.937 (0) Googledrive chunked upload: 31.8 % uploaded (4194304)
+0082.624 (0) Googledrive chunked upload: 39.8 % uploaded (5242880)
+0083.362 (0) Googledrive chunked upload: 47.7 % uploaded (6291456)
+0083.978 (0) Googledrive chunked upload: 55.7 % uploaded (7340032)
+0084.871 (0) Googledrive chunked upload: 63.6 % uploaded (8388608)
+0085.574 (0) Googledrive chunked upload: 71.6 % uploaded (9437184)
+0086.545 (0) Googledrive chunked upload: 79.5 % uploaded (10485760)
+0087.926 (0) Googledrive chunked upload: 87.5 % uploaded (11534336)
+0088.862 (0) Googledrive chunked upload: 95.4 % uploaded (12582912)
+0090.507 (0) Googledrive chunked upload: 100 % uploaded (12582912)
+0090.512 (0) Google Drive: OK: Archive backup_2020-09-16-0845_OMGee_bd1197fca7de-uploads.zip uploaded in 12.55 seconds
+0090.513 (0) Recording as successfully uploaded: backup_2020-09-16-0845_OMGee_bd1197fca7de-uploads.zip
+0090.518 (0) Deleting local file: backup_2020-09-16-0845_OMGee_bd1197fca7de-uploads.zip: OK
+0090.818 (0) Google Drive: quota usage: used=214.3 MB, total=15360 MB, available=15145.7 MB
+0090.820 (0) Google Drive: backup_2020-09-16-0845_OMGee_bd1197fca7de-others.zip: Attempting to upload to Google Drive (into folder id: 1Lz_FBoZquEcY5nWorS3npP8g9oTne4oH)
+0092.976 (0) Googledrive chunked upload: 100 % uploaded
+0093.046 (0) Google Drive: OK: Archive backup_2020-09-16-0845_OMGee_bd1197fca7de-others.zip uploaded in 2.22 seconds
+0093.151 (0) Recording as successfully uploaded: backup_2020-09-16-0845_OMGee_bd1197fca7de-others.zip
+0093.236 (0) Deleting local file: backup_2020-09-16-0845_OMGee_bd1197fca7de-others.zip: OK
+0093.565 (0) Google Drive: quota usage: used=214.3 MB, total=15360 MB, available=15145.7 MB
+0093.583 (0) Google Drive: backup_2020-09-16-0845_OMGee_bd1197fca7de-db.gz: Attempting to upload to Google Drive (into folder id: 1Lz_FBoZquEcY5nWorS3npP8g9oTne4oH)
+0095.082 (0) Googledrive chunked upload: 62.5 % uploaded (1048576)
+0096.916 (0) Googledrive chunked upload: 100 % uploaded (1048576)
+0096.921 (0) Google Drive: OK: Archive backup_2020-09-16-0845_OMGee_bd1197fca7de-db.gz uploaded in 3.32 seconds
+0096.923 (0) Recording as successfully uploaded: backup_2020-09-16-0845_OMGee_bd1197fca7de-db.gz
+0096.927 (0) Deleting local file: backup_2020-09-16-0845_OMGee_bd1197fca7de-db.gz: OK
+0096.933 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0096.934 (0) Number of backup sets in history: 3; groups (db): 1
+0096.936 (0) Examining (for databases) backup set with group_id=0, nonce=bd1197fca7de, datestamp=1600245928 (Sep 16 2020 08:45:28)
+0096.938 (0) This backup set is the backup set just made, so will not be deleted.
+0096.938 (0) Examining (for databases) backup set with group_id=0, nonce=d92106ee567c, datestamp=1599451613 (Sep 07 2020 04:06:53)
+0096.938 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0096.940 (0) Examining (for databases) backup set with group_id=0, nonce=2f10a3522b29, datestamp=1599013193 (Sep 02 2020 02:19:53)
+0096.940 (0) 1599013193: db: this set includes a database (backup_2020-09-02-0219_OMGee_2f10a3522b29-db.gz); db count is now 2
+0096.940 (0) 1599013193: db: over retain limit (2); will delete this database
+0096.940 (0) Delete file: backup_2020-09-02-0219_OMGee_2f10a3522b29-db.gz, service=googledrive
+0096.941 (0) Deleting local copy (backup_2020-09-02-0219_OMGee_2f10a3522b29-db.gz)
+0098.126 (0) Google Drive: backup_2020-09-02-0219_OMGee_2f10a3522b29-db.gz: Deletion successful
+0098.130 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0098.132 (0) Number of backup sets in history: 3; groups (files): 1
+0098.133 (0) Examining (for files) backup set with nonce=bd1197fca7de, datestamp=1600245928 (Sep 16 2020 08:45:28)
+0098.133 (0) This backup set is the backup set just made, so will not be deleted.
+0098.134 (0) This backup set is the backup set just made, so will not be deleted.
+0098.134 (0) This backup set is the backup set just made, so will not be deleted.
+0098.135 (0) This backup set is the backup set just made, so will not be deleted.
+0098.135 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0098.136 (0) Examining (for files) backup set with nonce=d92106ee567c, datestamp=1599451613 (Sep 07 2020 04:06:53)
+0098.136 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0098.136 (0) Examining (for files) backup set with nonce=2f10a3522b29, datestamp=1599013193 (Sep 02 2020 02:19:53)
+0098.136 (0) plugins: over retain limit (2); will delete this file entity
+0098.136 (0) themes: over retain limit (2); will delete this file entity
+0098.136 (0) uploads: over retain limit (2); will delete this file entity
+0098.136 (0) others: over retain limit (2); will delete this file entity
+0098.136 (0) Delete file: backup_2020-09-02-0219_OMGee_2f10a3522b29-plugins.zip, service=googledrive
+0098.137 (0) Deleting local copy (backup_2020-09-02-0219_OMGee_2f10a3522b29-plugins.zip)
+0098.139 (0) Delete file: backup_2020-09-02-0219_OMGee_2f10a3522b29-themes.zip, service=googledrive
+0098.140 (0) Deleting local copy (backup_2020-09-02-0219_OMGee_2f10a3522b29-themes.zip)
+0098.142 (0) Delete file: backup_2020-09-02-0219_OMGee_2f10a3522b29-uploads.zip, service=googledrive
+0098.144 (0) Deleting local copy (backup_2020-09-02-0219_OMGee_2f10a3522b29-uploads.zip)
+0098.145 (0) Delete file: backup_2020-09-02-0219_OMGee_2f10a3522b29-others.zip, service=googledrive
+0098.146 (0) Deleting local copy (backup_2020-09-02-0219_OMGee_2f10a3522b29-others.zip)
+0098.965 (0) Google Drive: backup_2020-09-02-0219_OMGee_2f10a3522b29-others.zip: Deletion successful
+0099.478 (0) Google Drive: backup_2020-09-02-0219_OMGee_2f10a3522b29-uploads.zip: Deletion successful
+0100.186 (0) Google Drive: backup_2020-09-02-0219_OMGee_2f10a3522b29-themes.zip: Deletion successful
+0100.666 (0) Google Drive: backup_2020-09-02-0219_OMGee_2f10a3522b29-plugins.zip: Deletion successful
+0100.670 (0) This backup set is now empty; will remove from history
+0100.672 (0) Deleting log file (log.2f10a3522b29.txt)
+0100.673 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0100.680 (0) Resume backup (bd1197fca7de, 0): finish run
+0100.685 (0) Decremented the semaphore (fd) by 1
+0100.687 (0) Semaphore (fd) unlocked
+0100.690 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0100.718 (0) No email will/can be sent - the user has not configured an email address.
+0100.719 (0) The backup apparently succeeded and is now complete

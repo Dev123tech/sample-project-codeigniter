@@ -1,0 +1,181 @@
+.boxed form .panel-footer span {
+    z-index: 1080;
+    position: relative;
+}
+
+
+/*atul custom css*/
+
+.total_sales_per_country .content_wrapper br {
+    display: none !important;
+}
+
+.total_sales_per_country .content_wrapper span {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.total_sales_per_country .total_sales_box {
+    display: flex;
+    align-items: center;
+}
+
+.total_sales_per_country .total_sales_box .label {
+    font-size: 15px !important;
+}
+
+.total_sales_per_country .total_sales_box {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-bottom: 17px;
+    width: calc(50% - 9px);
+}
+
+.secondrowheight {
+    min-height: 167px;
+}
+
+.total_sale_height {
+    min-height: 159px;
+}
+
+.minheight {
+    height: 117px;
+}
+
+.total_sales_per_country p:empty {
+    display: none !important;
+}
+
+.panel_min_height {
+    min-height: 108px !important;
+}
+
+.total_sales_per_country .total_sales_box .label {
+    font-size: 15px !important;
+    width: 49px;
+    display: inline-block;
+}
+
+.dash_vendor_custom .first_row_min_height {
+    min-height: 117px;
+}
+
+.dash_vendor_custom .second_row_min_height {
+    min-height: 226px;
+}
+
+.dash_vendor_custom .panel-body {
+    background: #fff;
+}
+
+.country_head {
+    width: 233px;
+    height: 101px;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding-top: 5px;
+    font-size: 55px;
+    background: transparent;
+}
+
+.dash_vendor_custom .panel-bordered {
+    border: none !important;
+}
+
+.dash_vendor_custom .panel-heading {
+    background: #303641 !important;
+    color: #efc96b !important;
+    border-radius: 6px;
+    margin-top: -20px;
+    padding: 4px 0;
+    margin: 0 18px;
+    height: 50px;
+    position: relative;
+    bottom: 19px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgb(115 115 115);
+}
+
+.dash_vendor_custom .panel-body {
+    padding: 8px 15px;
+}
+
+.dash_vendor_custom .label-dark {
+    background-color: #3b3e46;
+    /* padding: 7px 24px;*/
+}
+
+.dash_vendor_custom .label-success {
+    background-color: #2a2f35;
+    color: #fff;
+    margin-left: -5px;
+    /* padding: 7px 24px;*/
+}
+
+.total_sales_per_country .total_sales_box .label.label-dark {
+    width: calc(86% - 49px) !important;
+    display: inline-block;
+    height: 30px;
+    padding-top: 6px;
+}
+
+.total_sales_per_country .panel-body {
+    padding-top: 0 !important;
+}
+
+.total_sales_per_country .total_sales_box .label.label-success {
+    height: 30px;
+    padding-top: 6px;
+    width: calc(73% - 81px) !important;
+}
+
+.dash_vendor_custom .panel {
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 22%);
+    border-radius: 6px;
+}
+
+.dash_vendor_custom .label-purple {
+    background-color: transparent;
+    padding: 7px 21px;
+    color: #071144;
+    font-weight: bold;
+}
+
+#content-container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #EEEEEE !important;
+}
+
+
+/*responsive*/
+
+@media only screen and (max-width: 1600px) {
+    .total_sales_per_country .total_sales_box .label.label-success {
+        height: 30px;
+        padding-top: 6px;
+        width: calc(71% - 81px) !important;
+    }
+    .total_sales_per_country .total_sales_box .label.label-dark {
+        width: calc(79% - 49px) !important;
+        display: inline-block;
+        height: 30px;
+        padding-top: 6px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .total_sales_per_country .total_sales_box .label.label-dark {
+        width: calc(100% - 49px) !important;
+        display: inline-block;
+        height: 30px;
+        padding-top: 6px;
+    }
+    .total_sales_per_country .total_sales_box .label.label-success {
+        height: 30px;
+        padding-top: 6px;
+        width: calc(84% - 53px) !important;
+    }
+}

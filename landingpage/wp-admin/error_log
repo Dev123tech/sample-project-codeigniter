@@ -1,0 +1,341 @@
+[25-Aug-2020 05:22:37 UTC] WordPress database error Can't DROP 'status'; check that column/key exists for query ALTER TABLE omg_fv_enteries DROP COLUMN status made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, FormVibes\Classes\DbTables::fv_plugin_activated, FormVibes\Classes\DbTables::create_db_table
+[25-Aug-2020 09:14:34 UTC] =============Form Vibes Log===================
+[25-Aug-2020 09:14:34 UTC] =============Captured DATA===================
+[25-Aug-2020 09:14:34 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => 8772c2f
+    [captured] => 2020-08-25 09:14:34
+    [captured_gmt] => 2020-08-25 09:14:34
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/
+    [posted_data] => Array
+        (
+            [field_994b0e4] => 
+            [name] => hassam
+            [last_name] => ali
+            [email] => hassamali416@gmail.com
+            [field_9dc3c09] => 
+            [field_5dd4217] => 
+            [field_34b30f1] => 
+            [field_a162e24] => 
+            [field_2b9ae72] => 
+            [field_e18206d] => 
+            [field_492dfb0] => 
+            [field_f4714ab] => 
+            [field_1365690] => 
+            [field_ee299f2] => 
+            [field_22ba0d4] => 
+            [field_e236205] => 
+            [field_02ff987] => 
+            [field_d5bdcb9] => 
+            [field_42ff992] => 
+            [field_186bdd1] => 
+            [field_b25e69d] => 
+            [field_a788561] => 
+            [field_60db9b7] => 
+            [field_900e34e] => 
+            [field_264b77a] => 
+            [fv_form_id] => 8772c2f
+        )
+
+)
+
+[25-Aug-2020 09:14:34 UTC] -----Result----------
+[25-Aug-2020 09:14:34 UTC] -----Inserting Data In Entry Table----------
+[25-Aug-2020 09:14:34 UTC] -----Entry Id 1----------
+[25-Aug-2020 09:14:34 UTC] -----Inserting Data In Entry Meta Table----------
+[25-Aug-2020 09:14:34 UTC] ==============Entry Saved Successfully===============
+[25-Aug-2020 10:44:56 UTC] =============Form Vibes Log===================
+[25-Aug-2020 10:44:56 UTC] =============Captured DATA===================
+[25-Aug-2020 10:44:56 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => 8772c2f
+    [captured] => 2020-08-25 10:44:56
+    [captured_gmt] => 2020-08-25 10:44:56
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/
+    [posted_data] => Array
+        (
+            [field_994b0e4] => 
+            [name] => Test
+            [last_name] => test2
+            [email] => inguzinfoway@gmail.com
+            [field_9dc3c09] => 
+            [field_5dd4217] => 
+            [field_34b30f1] => Spirits
+            [field_a162e24] => 
+            [field_2b9ae72] => 
+            [field_e18206d] => Less than $100
+            [field_492dfb0] => 
+            [field_f4714ab] => 
+            [field_1365690] => Which site?
+            [field_ee299f2] => 
+            [field_22ba0d4] => 
+            [field_e236205] => Community (Share experience and learn)
+            [field_02ff987] => 
+            [field_d5bdcb9] => 
+            [field_42ff992] => more than 12
+            [field_186bdd1] => 
+            [field_b25e69d] => 
+            [field_a788561] => Other
+            [field_60db9b7] => 
+            [field_900e34e] => 
+            [field_264b77a] => maybe?
+            [fv_form_id] => 8772c2f
+        )
+
+)
+
+[25-Aug-2020 10:44:56 UTC] -----Result----------
+[25-Aug-2020 10:44:56 UTC] -----Inserting Data In Entry Table----------
+[25-Aug-2020 10:44:57 UTC] -----Entry Id 2----------
+[25-Aug-2020 10:44:57 UTC] -----Inserting Data In Entry Meta Table----------
+[25-Aug-2020 10:44:57 UTC] ==============Entry Saved Successfully===============
+[25-Aug-2020 18:51:54 UTC] =============Form Vibes Log===================
+[25-Aug-2020 18:51:54 UTC] =============Captured DATA===================
+[25-Aug-2020 18:51:54 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => 182df4e
+    [captured] => 2020-08-25 18:51:54
+    [captured_gmt] => 2020-08-25 18:51:54
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/
+    [posted_data] => Array
+        (
+            [field_994b0e4] => 
+            [field_63d303b] => 
+            [firstname] => hassam
+            [last_name] => ali
+            [email] => hassamali416@gmail.com
+            [field_business_name] => iGeeks
+            [field_state] => London
+            [field_9dc3c09] => 
+            [field_5dd4217] => 
+            [field_34b30f1] => Yes, I want to grow my product outreach in Asia
+            [field_a162e24] => 
+            [field_2b9ae72] => 
+            [field_e18206d] => 
+            [field_492dfb0] => 
+            [field_f4714ab] => 
+            [field_1365690] => 
+            [field_ee299f2] => 
+            [field_22ba0d4] => 
+            [field_e236205] => 
+            [fv_form_id] => 182df4e
+        )
+
+)
+
+[25-Aug-2020 18:51:54 UTC] -----Result----------
+[25-Aug-2020 18:51:54 UTC] -----Inserting Data In Entry Table----------
+[25-Aug-2020 18:51:54 UTC] -----Entry Id 3----------
+[25-Aug-2020 18:51:54 UTC] -----Inserting Data In Entry Meta Table----------
+[25-Aug-2020 18:51:54 UTC] ==============Entry Saved Successfully===============
+[25-Aug-2020 19:12:29 UTC] =============Form Vibes Log===================
+[25-Aug-2020 19:12:29 UTC] =============Captured DATA===================
+[25-Aug-2020 19:12:29 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => 182df4e
+    [captured] => 2020-08-25 19:12:29
+    [captured_gmt] => 2020-08-25 19:12:29
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/
+    [posted_data] => Array
+        (
+            [field_994b0e4] => 
+            [field_63d303b] => 
+            [firstname] => hassam
+            [last_name] => ali
+            [email] => hassamali416@gmail.com
+            [field_business_name] => iGeeks
+            [field_state] => London
+            [field_9dc3c09] => 
+            [field_5dd4217] => 
+            [field_34b30f1] => Yes, I want to grow my product outreach in Asia
+            [field_a162e24] => 
+            [field_2b9ae72] => 
+            [field_e18206d] => 
+            [field_492dfb0] => 
+            [field_f4714ab] => 
+            [field_1365690] => 
+            [field_ee299f2] => 
+            [field_22ba0d4] => 
+            [field_e236205] => 
+            [fv_form_id] => 182df4e
+        )
+
+)
+
+[25-Aug-2020 19:12:29 UTC] -----Result----------
+[25-Aug-2020 19:12:29 UTC] -----Inserting Data In Entry Table----------
+[25-Aug-2020 19:12:29 UTC] -----Entry Id 4----------
+[25-Aug-2020 19:12:29 UTC] -----Inserting Data In Entry Meta Table----------
+[25-Aug-2020 19:12:29 UTC] ==============Entry Saved Successfully===============
+[25-Aug-2020 19:21:29 UTC] =============Form Vibes Log===================
+[25-Aug-2020 19:21:29 UTC] =============Captured DATA===================
+[25-Aug-2020 19:21:29 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => 182df4e
+    [captured] => 2020-08-25 19:21:29
+    [captured_gmt] => 2020-08-25 19:21:29
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/
+    [posted_data] => Array
+        (
+            [field_994b0e4] => 
+            [field_63d303b] => 
+            [firstname] => hassam
+            [last_name] => ali
+            [email] => hassamali417@gmail.com
+            [field_business_name] => iGeeks
+            [field_state] => London
+            [field_9dc3c09] => 
+            [field_5dd4217] => 
+            [field_34b30f1] => Yes, I want to grow my product outreach in Asia
+            [field_a162e24] => 
+            [field_2b9ae72] => 
+            [field_e18206d] => No, I do not want to export my product.
+            [field_492dfb0] => 
+            [field_f4714ab] => 
+            [field_1365690] => Beer
+            [field_ee299f2] => 
+            [field_22ba0d4] => 
+            [field_e236205] => 25% - 30%
+            [fv_form_id] => 182df4e
+        )
+
+)
+
+[25-Aug-2020 19:21:29 UTC] -----Result----------
+[25-Aug-2020 19:21:29 UTC] -----Inserting Data In Entry Table----------
+[25-Aug-2020 19:21:29 UTC] -----Entry Id 5----------
+[25-Aug-2020 19:21:29 UTC] -----Inserting Data In Entry Meta Table----------
+[25-Aug-2020 19:21:29 UTC] ==============Entry Saved Successfully===============
+[25-Aug-2020 19:29:42 UTC] =============Form Vibes Log===================
+[25-Aug-2020 19:29:42 UTC] =============Captured DATA===================
+[25-Aug-2020 19:29:42 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => 8772c2f
+    [captured] => 2020-08-25 19:29:42
+    [captured_gmt] => 2020-08-25 19:29:42
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/
+    [posted_data] => Array
+        (
+            [field_994b0e4] => 
+            [field_85bfd69] => 
+            [firstname] => hassam
+            [last_name] => ali
+            [email] => hassamali417@gmail.com
+            [field_9dc3c09] => 
+            [field_5dd4217] => 
+            [field_34b30f1] => Craft Beer
+            [field_a162e24] => 
+            [field_2b9ae72] => 
+            [field_e18206d] => $100 - $500
+            [field_492dfb0] => 
+            [field_f4714ab] => 
+            [field_1365690] => Which site?
+            [field_ee299f2] => 
+            [field_22ba0d4] => 
+            [field_e236205] => Community (Share experience and learn)
+            [field_02ff987] => 
+            [field_d5bdcb9] => 
+            [field_42ff992] => less than 6
+            [field_186bdd1] => 
+            [field_b25e69d] => 
+            [field_a788561] => Yes, I live in Australia but also purchase to send overseas Yes, I paid Japan custom duty and shipping fee Yes, I paid shipping fee to Hong Kong
+            [field_60db9b7] => 
+            [field_900e34e] => 
+            [field_264b77a] => No
+            [fv_form_id] => 8772c2f
+        )
+
+)
+
+[25-Aug-2020 19:29:42 UTC] -----Result----------
+[25-Aug-2020 19:29:42 UTC] -----Inserting Data In Entry Table----------
+[25-Aug-2020 19:29:42 UTC] -----Entry Id 6----------
+[25-Aug-2020 19:29:42 UTC] -----Inserting Data In Entry Meta Table----------
+[25-Aug-2020 19:29:42 UTC] ==============Entry Saved Successfully===============
+[26-Aug-2020 02:27:22 UTC] =============Form Vibes Log===================
+[26-Aug-2020 02:27:22 UTC] =============Captured DATA===================
+[26-Aug-2020 02:27:22 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => e045ff8
+    [captured] => 2020-08-26 02:27:22
+    [captured_gmt] => 2020-08-26 02:27:22
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/#
+    [posted_data] => Array
+        (
+            [name] => DHruv
+            [field_7ceef84] => Saliya
+            [field_1318e63] => inguzinfoway@gmail.com
+            [email] => 12365478965
+            [message] => test
+            [fv_form_id] => e045ff8
+        )
+
+)
+
+[26-Aug-2020 02:27:22 UTC] -----Result----------
+[26-Aug-2020 02:27:22 UTC] -----Inserting Data In Entry Table----------
+[26-Aug-2020 02:27:22 UTC] -----Entry Id 7----------
+[26-Aug-2020 02:27:22 UTC] -----Inserting Data In Entry Meta Table----------
+[26-Aug-2020 02:27:22 UTC] ==============Entry Saved Successfully===============
+[26-Aug-2020 04:09:49 UTC] =============Form Vibes Log===================
+[26-Aug-2020 04:09:49 UTC] =============Captured DATA===================
+[26-Aug-2020 04:09:49 UTC] Array
+(
+    [plugin_name] => elementor
+    [id] => 8772c2f
+    [captured] => 2020-08-26 04:09:49
+    [captured_gmt] => 2020-08-26 04:09:49
+    [title] => New Form
+    [url] => https://inguzinfoway.com/omgee/
+    [posted_data] => Array
+        (
+            [field_994b0e4] => 
+            [field_85bfd69] => 
+            [firstname] => Testfirst
+            [last_name] => testlast
+            [email] => inguzinfoway@gmail.com
+            [field_9dc3c09] => 
+            [field_5dd4217] => 
+            [field_34b30f1] => Wine
+            [field_a162e24] => 
+            [field_2b9ae72] => 
+            [field_e18206d] => Less than $100
+            [field_492dfb0] => 
+            [field_f4714ab] => 
+            [field_1365690] => Local Online Store
+            [field_ee299f2] => 
+            [field_22ba0d4] => 
+            [field_e236205] => Rewards (Cashback, Coupon deals, Discounts)
+            [field_02ff987] => 
+            [field_d5bdcb9] => 
+            [field_42ff992] => less than 6
+            [field_186bdd1] => 
+            [field_b25e69d] => 
+            [field_a788561] => Other
+            [field_60db9b7] => 
+            [field_900e34e] => 
+            [field_264b77a] => No
+            [fv_form_id] => 8772c2f
+        )
+
+)
+
+[26-Aug-2020 04:09:49 UTC] -----Result----------
+[26-Aug-2020 04:09:49 UTC] -----Inserting Data In Entry Table----------
+[26-Aug-2020 04:09:49 UTC] -----Entry Id 8----------
+[26-Aug-2020 04:09:49 UTC] -----Inserting Data In Entry Meta Table----------
+[26-Aug-2020 04:09:49 UTC] ==============Entry Saved Successfully===============

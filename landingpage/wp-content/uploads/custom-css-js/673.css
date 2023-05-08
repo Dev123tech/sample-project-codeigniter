@@ -1,0 +1,24 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+.page-id-663 .custom-logo {width:32%!important;}
+.page-id-663 .page-header {display:none!important;}
+.page-id-663 #top-bar-wrap {display:none!important;}
+.page-id-663 .oceanwp-row {display:none!important;}
+.page-id-663 .no-footer-nav {background-color: #050F40!important;}
+.page-id-663 .minimal-header{background-color: transparent!important; border-bottom: 0px solid #f1f1f1!important;}
+.page-id-663 .elementor-heading-title {font-weight: 400!important;}
+.pageid-663 .elementor-heading-title {color:white!important;}
+.elementor-divider-separator {border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-border-color);
+}}</style>
+<!-- end Simple Custom CSS and JS -->
