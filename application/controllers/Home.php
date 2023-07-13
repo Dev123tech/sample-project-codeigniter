@@ -4,24 +4,15 @@ if (!defined('BASEPATH'))
 
 class Home extends CI_Controller
 {
-    /*  
-     *  Developed by: Active IT zone
-     *  Date    : 14 July, 2015
-     *  Active Supershop eCommerce CMS
-     *  http://codecanyon.net/user/activeitezone
-     */
-    
+     
     function __construct()
     {
         parent::__construct();
-        //$this->output->enable_profiler(TRUE);
         $this->load->database();
         $this->load->library('paypal');
         $this->load->library('twoCheckout_Lib');
         $this->load->library('vouguepay');
         $this->load->library('pum');
-        /*cache control*/
-        //ini_set("user_agent","My-Great-Marketplace-App");
         $cache_time  =  $this->db->get_where('general_settings',array('type' => 'cache_time'))->row()->value;
         if(!$this->input->is_ajax_request()){
             $this->output->set_header('HTTP/1.0 200 OK');
@@ -46,28 +37,6 @@ class Home extends CI_Controller
             }
         }
         $this->config->cache_query();
-
-       /*if(isset($_GET['lang']))
-        {
-            $this->session->set_userdata('currency', $_GET['lang']); 
-        }
-        else
-        {
-            $publicIP = file_get_contents("http://ipecho.net/plain");
-
-            $arr_country_code = file_get_contents("http://api.wipmania.com/$publicIP");
-            
-            $get_currency_code = $this->db->get_where('currency_settings', array('code' => $arr_country_code))->row()->currency_settings_id;
-            if($get_currency_code > 0)
-            {
-                $this->session->set_userdata('currency', $get_currency_code);
-            }
-            else
-            {
-               $this->session->set_userdata('currency', 2); 
-            }
-        }*/
-        
         
         $currency = $this->session->userdata('currency');
         if(!isset($currency))
@@ -76,35 +45,19 @@ class Home extends CI_Controller
         }
         setcookie('lang', $this->session->userdata('language'), time() + (86400), "/");
         setcookie('curr', $this->session->userdata('currency'), time() + (86400), "/");
-        //echo $_COOKIE['lang'];
     }    
     /* FUNCTION: Loads Homepage*/
     public function index()
     {
-        
-        //$this->output->enable_profiler(TRUE);
-        //$page_data['min'] = $this->get_range_lvl('product_id !=', '', "min");
-        //$page_data['max'] = $this->get_range_lvl('product_id !=', '', "max");
         $this->get_ranger_val();
-        
-        // $path='';
-        // $fileName=''; 
-        // $a = s3_file_upload($path,$fileName);       
-        // print_r($a);
 
         $home_style =  $this->db->get_where('ui_settings',array('type' => 'home_page_style'))->row()->value;
         $page_data['page_name']     = "home/home".$home_style;
         $page_data['asset_page']    = "home";
         $page_data['page_title']    = translate('home');
-
-
-        // $db_data =  $this->db->get('videos', '*', '')->result_array();
-        // $date = date("Y-m-d");
         
         $this->benchmark->mark('code_start');
         $this->load->view('front/index', $page_data);
-
-        // Some code happens here
 
         $this->benchmark->mark('code_end');
 
@@ -112,10 +65,6 @@ class Home extends CI_Controller
 
     function top_bar_right(){
         $this->load->view('front/components/top_bar_right.php');
-    }
-    
-    function abnl($abnl){
-        //echo $this->wallet_model->add_user_balance($abnl);
     }
 
     function load_portion($page = ''){
@@ -166,7 +115,6 @@ class Home extends CI_Controller
                 'category' => $para1
             ))->result_array();
 
-            // echo $this->db->last_query();
         } else if ($para2 != "") {
             $page_data['all_products'] = $this->db->get_where('product', array(
                 'sub_category' => $para2
@@ -380,7 +328,6 @@ class Home extends CI_Controller
         
         $this->twocheckout_lib->set_acct_info($c2_user, $c2_secret, 'Y');
         $data2['response'] = $this->twocheckout_lib->validate_response();
-        //var_dump($this->twocheckout_lib->validate_response());
         $status = $data2['response']['status'];
         if ($status == 'pass') {
             $data1['status']             = 'paid';
@@ -670,7 +617,6 @@ class Home extends CI_Controller
             } else if($para2 == "info_view"){
                 $info = $this->db->get_where('wallet_load',array('wallet_load_id'=>$para3))->row();
                 $page_info['det']['status'] = $info->status;
-                //$page_info['det']['status'] = $info->status;
                 $page_info['id'] = $para3;
                 $page_info['payment_info'] = $info->payment_details;
                 $this->load->view('front/user/wallet_info',$page_info);
@@ -697,8 +643,6 @@ class Home extends CI_Controller
                     $this->paypal->add_field('cmd', '_xclick');
                     
                     $this->paypal->add_field('amount', $this->cart->format_number($amount_in_usd));
-
-                    //$this->paypal->add_field('amount', $grand_total);
                     $this->paypal->add_field('custom', $id);
                     $this->paypal->add_field('business', $paypal_email);
                     $this->paypal->add_field('notify_url', base_url() . 'home/wallet_paypal_ipn');
@@ -927,24 +871,18 @@ class Home extends CI_Controller
                 $sslcz = json_decode($sslcommerzResponse, true );
 
                 if(isset($sslcz['GatewayPageURL']) && $sslcz['GatewayPageURL']!="" ) {
-                    # THERE ARE MANY WAYS TO REDIRECT - Javascript, Meta Tag or Php Header Redirect or Other
-                    # echo "<script>window.location.href = '". $sslcz['GatewayPageURL'] ."';</script>";
                     echo "<meta http-equiv='refresh' content='0;url=".$sslcz['GatewayPageURL']."'>";
-                    # header("Location: ". $sslcz['GatewayPageURL']);
                     exit;
                 } else {
                     echo "JSON Data parsing error!";
                 }
             }
-                //$this->email_model->wallet_email('payment_info_require_mail_to_customer', $id);
-                //$this->email_model->wallet_email('customer_added_wallet_to_admin', $id);
             } else if($para2 == "set_info"){ 
                 $data['status']                 = 'pending';
                 $data['payment_details']        = $this->input->post('payment_info');
                 $data['timestamp']              = time();
                 $this->db->where('wallet_load_id',$para3);
                 $this->db->update('wallet_load',$data);
-                // $this->email_model->wallet_email('customer_set_payment_info_to_admin', $para3);
                 echo 'done';        
             } else {
                 $this->load->view('front/user/wallet');
@@ -1038,7 +976,6 @@ class Home extends CI_Controller
                     $data['added_by']           = $this->session->userdata('user_id');
 
                     $this->db->insert('customer_product', $data);
-                    // echo $this->db->last_query();
                     $id = $this->db->insert_id();
                     $this->benchmark->mark_time();
                     $this->crud_model->file_up("images", "customer_product", $id, 'multi');
@@ -1815,8 +1752,6 @@ class Home extends CI_Controller
     {
         if ($this->crud_model->get_settings_value('general_settings','vendor_system') !== 'ok') 
         {
-
-            // echo $search = $this->input->post('query');
   
             $search = urlencode($this->input->post('query'));
             $category = $this->input->post('category');
@@ -2413,11 +2348,7 @@ class Home extends CI_Controller
     function product_view($para1 = "",$para2 = "")
     {
         
-        /*$is_bundle = $this->db->get_where('product', array('product_id' => $para1))->row()->is_bundle;
-        if ($this->crud_model->get_type_name_by_id('general_settings','82','value') == 'ok') {
-        }*/
         $product_data       = $this->db->get_where('product', array('product_id' => $para1,'status' => 'ok'));
-        // print_r($product_data);die();
         $this->db->where('product_id', $para1);
         $this->db->update('product', array(
             'number_of_view' => $product_data->row()->number_of_view+1,
@@ -2680,7 +2611,6 @@ class Home extends CI_Controller
                                 $password         = $this->input->post('password1');
                                 $data['password'] = sha1($password);
                                 $this->db->insert('vendor', $data);
-                                //echo $this->db->last_query();
 
                               $newvendor_id=$this->db->insert_id();
 
@@ -2716,33 +2646,15 @@ class Home extends CI_Controller
                     }else{
                         $data['titlename']          = $this->input->post('titlename');
                         $data['name']               = $this->input->post('name');
-
-
-                           
                           $data['last_name']               = $this->input->post('last_name');
-
-
                           $data['mobile']               = $this->input->post('mobile');
-
-
-
                           $data['website']               = $this->input->post('website');  
-
-
-
                          $data['acn_and_abn']               = $this->input->post('abn');
-
-
-
-
-
-
                         $data['email']              = $this->input->post('email');
                         $data['phone']              = $this->input->post('phone');
                         $data['address1']           = $this->input->post('address1');
                         $data['address2']           = $this->input->post('address2');
                         $data['company']            = $this->input->post('company');
-                        //$data['display_name']       = $this->input->post('display_name');
                         $data['state']              = $this->input->post('state');
                         $data['country']            = $this->input->post('country');
                         $data['city']               = $this->input->post('city');
@@ -2767,10 +2679,8 @@ class Home extends CI_Controller
                                     $brand=$_POST["brand"];
                                     for($i=0;$i<=count($brand);$i++) 
                                     {
-                                        $categoryids = $_POST["brandcategory".$i][$i];
-                                        
+                                        $categoryids = $_POST["brandcategory".$i][$i];                                        
                                         $name = $brand[$i];
-                                        
                                         $vendor_brands=array('user_id'=>$newvendor_id,'name'=>$name,'category'=>$categoryids);
                                         $this->db->insert('vendorbrands',$vendor_brands);             
                                     }
@@ -2822,8 +2732,6 @@ class Home extends CI_Controller
     /* FUNCTION: Concerning Login */
     function login($para1 = "", $para2 = "")
     {
-
-
         $page_data['page_name'] = "login";
         
         $this->load->library('form_validation');
@@ -2887,7 +2795,6 @@ class Home extends CI_Controller
                 }
             }
         }
-        //$this->load->view('front/index', $page_data);
     }
 
     function eligiblity_check(){
@@ -2924,54 +2831,19 @@ class Home extends CI_Controller
             );
             $this->load->library('Facebook', $config);
 
-            // Try to get the user's id on Facebook
-            //$data['user'] = array();
             if ($this->facebook->is_authenticated())
             {
                 $page_data['url'] = $this->facebook->login_url();
 
-            } else {
-                // Generate a login url
-                //$page_data['url'] = $this->facebook->getLoginUrl(array('scope'=>'email')); 
-                
-                $page_data['url'] = $this->facebook->login_url();
-                /*
-                $this->facebook->getLoginUrl(array(
-                    'redirect_uri' => site_url('home/login_set/back/' . $para2),
-                    'scope' => array(
-                        "email"
-                    ) // permissions here
-                ));
-                */
-                /*
-                $permissions        = ['email']; // optional
-                $page_data['url']   = $this->facebook->getLoginUrl(site_url('home/login_set/back/' . $para2), $permissions);
-                */
-                //redirect($data['url']);
+            } else {                
+                $page_data['url'] = $this->facebook->login_url();            
             } 
 
-            /*
-            else {
-                // Get user's data and print it
-                $atok = $this->facebook->getAccessToken();
-                $page_data['user'] = $this->facebook->api('/me?fields=email,first_name,last_name&access_token={'.$atok.'}');
-                $page_data['url']  = site_url('home/login_set/back/' . $para2); // Logs off application
-                //print_r($user);
-            }
-            */
-
             if ($para1 == 'back') {
-                //$userid = $this->facebook->getUser();
-                //if($userid == 0){
-                //echo 'pp----<br>';
                 if(1 == 0){
 
                 } else {
-                    //$atok = $this->facebook->getAccessToken();
-
-                    //$user = $this->facebook->api('/me?fields=email,first_name,last_name&access_token={'.$this->facebook->getAccessTokenFromCode($this->input->get('code')));
                     $user = $this->facebook->request('get', '/me?fields=id,first_name,last_name,name,email');
-                    //var_dump($user);
                     if (!isset($user['error']))
                     {
                         if ($user_id = $this->crud_model->exists_in_table('user', 'fb_id', $user['id'])) {
@@ -3258,7 +3130,6 @@ class Home extends CI_Controller
                                         $refer_data['status'] = "Joined";
                                         $this->db->where('refer_email',$data['email']);
                                         $this->db->update('refer',$refer_data);
-                                        //echo $this->db->last_query();
                                     }
                                     else {
                                         $refer_data['refer_user_id'] = $user_refer_id_check;
@@ -3266,7 +3137,6 @@ class Home extends CI_Controller
                                         $refer_data['refer_email'] = $data['email'];
                                         $refer_data['status'] = "Joined";
                                         $this->db->insert('refer',$refer_data);
-                                        //echo $this->db->last_query();
                                     } 
                                 }    
 
@@ -3304,7 +3174,6 @@ class Home extends CI_Controller
                             $password         = $this->input->post('password1');
                             $data['password'] = sha1($password);
                             $this->db->insert('user', $data);
-                            //echo $this->db->last_query();
 
                             //refer_insert
                                 $user_refer_id_check = base64_decode($this->input->post('unique_refer_key'));
@@ -3320,7 +3189,6 @@ class Home extends CI_Controller
                                         $refer_data['status'] = "Joined";
                                         $this->db->where('refer_email',$data['email']);
                                         $this->db->update('refer',$refer_data);
-                                        //echo $this->db->last_query();
                                     }
                                     else {
                                         $refer_data['refer_user_id'] = $user_refer_id_check;
@@ -3328,7 +3196,7 @@ class Home extends CI_Controller
                                         $refer_data['refer_email'] = $data['email'];
                                         $refer_data['status'] = "Joined";
                                         $this->db->insert('refer',$refer_data);
-                                        //echo $this->db->last_query();
+                                        
                                     } 
                                 }
                             
@@ -3477,9 +3345,6 @@ class Home extends CI_Controller
         
     }
 
-    function add_m(){
-        //$this->wallet_model->add_user_balance(20);
-    }
 
     function cancel_order(){
         $this->session->set_userdata('sale_id', '');
@@ -3584,9 +3449,6 @@ class Home extends CI_Controller
             if($variationqty == 12) {
                 $orp = $orp * 90 / 100;
             }
-
-            //$total_discount = $orp * $discount;
-            //$total_orp = $orp - $total_discount;
 
             $num_of_imgs = $this->db->get_where('product',array('product_id'=>$para2))->row();
 
@@ -4112,17 +3974,7 @@ class Home extends CI_Controller
                 {
                     $currency_tax  = $this->db->get_where('business_settings', array('type' => 'sgd_tax'))->row()->value;
                 }
-                $tax = 0;
-                //$tax = ($producttotal - $total_discounts)*($currency_tax/100);
                 $sub_total= ($total_sub_total + $tax)-$total_promocode;
-
-                /**
-                 * 
-                 * added by niraj lal rahi
-                 * @date 14-Nov-2020
-                 * calculate insurance policy for international delivery
-                 * 2% of total purchase amount
-                 */
                 
                 $insurance_amount = 0;
 
@@ -4241,8 +4093,6 @@ class Home extends CI_Controller
     function cart_checkout($para1 = "")
     {
         $carted = $this->cart->contents();
-        // var_dump($carted);
-        // die();
         if (count($carted) <= 0) {
             redirect(base_url() . 'home/', 'refresh');
         }
@@ -4331,8 +4181,6 @@ class Home extends CI_Controller
             if($p < 10){
                 $c = $this->db->get_where('coupon',array('code'=>$para1));
                 $coupon = $c->result_array();
-                //echo $c->num_rows();
-                //,'till <= '=>date('Y-m-d')
                 if($c->num_rows() > 0){
                     foreach ($coupon as $row) {
                         $spec = json_decode($row['spec'],true);
@@ -4516,8 +4364,6 @@ class Home extends CI_Controller
                 if ($this->crud_model->get_type_name_by_id('business_settings', '3', 'value') == 'fixed') {
                     $this->paypal->add_field('shipping_1', $this->cart->format_number(($this->crud_model->get_type_name_by_id('business_settings', '2', 'value') / $exchange)));
                 }
-                //$this->paypal->add_field('amount', $grand_total);
-                //$this->paypal->add_field('currency_code', 'currency_code()');
                 $this->paypal->add_field('custom', $sale_id);
                 $this->paypal->add_field('business', $paypal_email);
                 $this->paypal->add_field('notify_url', base_url() . 'home/paypal_ipn');
@@ -4607,8 +4453,6 @@ class Home extends CI_Controller
                 $data['grand_total']       = $grand_total;
                 $data['sale_datetime']     = time();
                 $data['delivary_datetime'] = '';
-                //$vouguepay_id              = $this->crud_model->get_type_name_by_id('business_settings', '1', 'value');
-
                 $this->db->insert('sale', $data);
                 $sale_id                   = $this->db->insert_id();
                 if ($this->session->userdata('user_login') == 'yes') {
@@ -4653,8 +4497,6 @@ class Home extends CI_Controller
                 $this->vouguepay->add_field('v_merchant_id', $vouguepay_id);
                 $this->vouguepay->add_field('merchant_ref', $merchant_ref);
                 $this->vouguepay->add_field('memo', 'Order from '.$system_title);
-                //$this->vouguepay->add_field('developer_code', $developer_code);
-                //$this->vouguepay->add_field('store_id', $store_id);
 
                 $i = 1;
                 $tax = 0;
@@ -4739,7 +4581,6 @@ class Home extends CI_Controller
                 $this->email_model->email_invoice($sale_id);
                 $this->cart->destroy();
                 $this->session->set_userdata('couponer','');
-                //echo $sale_id;
                 if ($this->session->userdata('user_login') == 'yes') {
                     redirect(base_url() . 'home/invoice/' . $sale_id, 'refresh'); 
                 }
@@ -4815,10 +4656,9 @@ class Home extends CI_Controller
                         $data2['method']                 = 'wallet';
                         $data2['amount']                 = $total_coupon_price;
                         $data2['status']                 = 'paid';
-                        //$data2['payment_details']        = "Customer Info: \n".json_encode($usera,true)."\n \n Charge Info: \n".json_encode($charge,true);;
                         $data2['timestamp']              = time();
                         $this->db->insert('wallet_load',$data2);
-                        //echo $this->db->last_query();
+                        
                         $id = $this->db->insert_id();       
                         $user = $this->db->get_where('wallet_load', array('wallet_load_id' => $id))->row()->user;
                         $amount = $this->db->get_where('wallet_load', array('wallet_load_id' => $id))->row()->amount;
@@ -4833,7 +4673,6 @@ class Home extends CI_Controller
                     $this->crud_model->email_invoice($sale_id);
                     $this->cart->destroy();
                     $this->session->set_userdata('couponer','');
-                    //echo $sale_id;
                     redirect(base_url() . 'home/thankyou/' . $sale_id, 'refresh');
                 }
             } else {
@@ -4880,7 +4719,7 @@ class Home extends CI_Controller
                         $data['delivary_datetime'] = '';
                         
                         $this->db->insert('sale', $data);
-                        //echo $this->db->last_query();
+                        
                         $sale_id = $this->db->insert_id();
                         if($this->session->userdata('user_login') == 'yes') 
                         {
@@ -4914,30 +4753,7 @@ class Home extends CI_Controller
                         $this->db->where('sale_id', $sale_id);
                         $this->db->update('sale', $data);
                         $total_coupon_price = 0;
-                        /*foreach ($carted as $value) 
-                        {
-                            $optiondata = json_decode($value['option'],true);
-                            $total_coupon_price += $optiondata['coupon_price'];
-                            $this->crud_model->decrease_quantity($optiondata['productid'], $value['qty']);
-                            $data1['type']         = 'destroy';
-                            $data1['category']     = $this->db->get_where('product', array(
-                                'product_id' => $optiondata['productid']
-                            ))->row()->category;
-                            $data1['sub_category'] = $this->db->get_where('product', array(
-                                'product_id' => $optiondata['productid']
-                            ))->row()->sub_category;
-                            $data1['product']      = $optiondata['productid'];
-                            $data1['quantity']     = $value['qty'];
-                            $data1['total']        = 0;
-                            $data1['reason_note']  = 'sale';
-                            $data1['sale_id']      = $sale_id;
-                            $data1['datetime']     = time();
-                            $this->db->insert('stock', $data1);
-                        }*/
-                        //$this->crud_model->digital_to_customer($sale_id);
-                        //$this->crud_model->email_invoice($sale_id);
                         $this->cart->destroy();
-                        //$this->session->set_userdata('couponer','');
                         if($this->session->userdata('user_login') == 'yes') 
                         {
                             if($this->session->userdata('total_cashback_discount') > 0)
@@ -4949,7 +4765,7 @@ class Home extends CI_Controller
                                 $data2['payment_details']        = "Customer Info: \n".json_encode($usera,true)."\n \n Charge Info: \n".json_encode($charge,true);;
                                 $data2['timestamp']              = time();
                                 $this->db->insert('wallet_load',$data2);
-                                //echo $this->db->last_query();
+                                
                                 $id = $this->db->insert_id();       
                                 $user = $this->db->get_where('wallet_load', array('wallet_load_id' => $id))->row()->user;
                                 $amount = $this->db->get_where('wallet_load', array('wallet_load_id' => $id))->row()->amount;
@@ -5118,18 +4934,8 @@ class Home extends CI_Controller
                 $ssl_store_id = $this->db->get_where('business_settings', array('type' => 'ssl_store_id'))->row()->value;
                 $ssl_store_passwd = $this->db->get_where('business_settings', array('type' => 'ssl_store_passwd'))->row()->value;
                 $ssl_type = $this->db->get_where('business_settings', array('type' => 'ssl_type'))->row()->value;
-                
-                //Check here//
-                /*
-                    Say, current currency is INR. Amount is 100 INR.
-                    1 USD = 72 INR
-                    1 USD = 83 BDT
-                    1 BDT = (72/83) INR = 0.867 INR
-                    thus, 100 INR = (100/0.867) BDT = 115.34 BDT
-                */
                 $exchange_to_bdt = exchange('bdt');
                 $total_amount = $grand_total / $exchange_to_bdt;
-                //$total_amount = $grand_total;
 
                 /* PHP */
                 $post_data = array();
@@ -6805,7 +6611,7 @@ class Home extends CI_Controller
 
             //  $this->email_model->do_email();
 
-            //echo $this->db->last_query();
+            
             
             redirect(base_url('home/refer/'), 'refresh');
         }
